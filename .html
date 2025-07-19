@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+    <meta charset= UTF-8>
+    <meta name="author" content="Nicole Heinrich">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Foca das Rondas</title>
+
+            <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+            <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
+            <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="styles/newspaper.css">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9407988-10"></script>
+
+            <style>
+
+                /* estilo geral do arquivo*/
+                body { 
+                font-family: 'Droid Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif serif;
+                font-size: 2em;
+                color: #2f2f2f;
+                background-color: #f9f7f1;
+                }
+                    
+
+                h1 {
+                    font-size: 4em;
+                    font-family: 'Playfair Display', serif; 
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                }
+
+                .playerbs{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-;
+                    padding:0;
+                    margin-left: 34px;
+                }
+            
+                .temperatura {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                }
+             </style>
+        </head>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <body>
+
+            <!--texto só pra ver qual letra é legal-->
+            <h1><strong>the foca times</strong></h1>
+            <p><em>Campinas e região</em></p>
+
+            <!--CEPAGRI-->
+            <div id="temperatura">
+            	<div id="hora"></div>
+                <iframe src="https://www.cpa.unicamp.br/app/view/i-prev-1.php" 
+                width="330" 
+                height="50" 
+                frameborder="0" 
+                scrolling="no">
+            </iframe>
+            </div>
+
+            <!--CBN-->
+
+            <img src="https://portalcbncampinas.com.br/wp-content/uploads/2019/10/cropped-logo-losango-cbn-32x32.png" 
+            width="32px" 
+            height="32px"
+            margin="0"
+            padding="0">
+
+            <div id="playerbs"></div>
+            <link rel="stylesheet" href="https://player.brasilstream.com.br/1176847539/css.css">
+            <script src="https://player.brasilstream.com.br/1176847539/js.js" crossorigin="anonymous"></script>
+
+            <!--WAZE-->
+            <iframe src="https://embed.waze.com/iframe?zoom=15&lat=-22.902998&lon=-47.047384&ct=livemap" 
+            width="600" 
+            height="450" 
+            allowfullscreen>
+
+            </iframe>
+
+
+        </body>
+    </html>
